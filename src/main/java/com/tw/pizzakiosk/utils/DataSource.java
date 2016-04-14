@@ -57,7 +57,6 @@ public class DataSource {
 
     }
 
-
     private void loadToppings(ObjectMapper objectMapper, JsonNode rootNode) {
         Iterator<JsonNode> elements;
         JsonNode obj;
@@ -102,5 +101,5 @@ public class DataSource {
         return this.toppingMap;
     }
 
-    public List<Crust> getCrustsList(){ return this.crustList; }
+    public List<Crust> getCrustsList() { return this.crustList; }
 }

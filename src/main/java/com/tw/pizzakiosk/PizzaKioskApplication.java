@@ -38,14 +38,7 @@ public class PizzaKioskApplication {
             model.addAttribute("toppings", toppingMap.keySet());
             try {
                 PizzaKiosk kiosk = PizzaKiosk.getInstance();
-                System.out.print("Sizes:" + sizeMap.keySet().size());
-                System.out.print("Crust:" + crustsList.size());
-                System.out.print("toppings:" + toppingMap.keySet().size());
-                System.out.print("Crust Size:" + orderPizzaForm.getSize());
-                System.out.print("Topp:" + orderPizzaForm.getToppings());
-
                 double price = kiosk.makePizzaWith(crustsList.get(0),orderPizzaForm.getSize(),orderPizzaForm.getToppings());
-                System.out.println("This is my Price" + price);
                 model.addAttribute("price", price);
             }catch (Exception e) {
                 e.printStackTrace();

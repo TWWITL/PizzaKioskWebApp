@@ -13,7 +13,7 @@
         </select>
         <select id="crustType" name="crustType" required="required">
             <option value="" disabled="disabled" selected="selected">Crust Type</option>
-            <option th:each="crustType : ${crustTypes}" th:text="${crustType}" th:value="${crustType}"></option>
+            <option th:each="crustType : ${crustTypes}" th:text="${crustType.getDesc()}" th:value="${crustType}"></option>
         </select>
         <table border = "0" style ="display : inline;">
             <th>Topping</th>
