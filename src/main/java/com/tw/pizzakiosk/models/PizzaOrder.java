@@ -1,13 +1,13 @@
-package com.tw.pizzakiosk;
+package com.tw.pizzakiosk.models;
 
 import java.util.List;
 
-public class OrderPizzaForm {
+public class PizzaOrder {
     private String size;
     private String crustType;
     private List<String> toppings;
 
-    public OrderPizzaForm() {
+    public PizzaOrder() {
     }
 
     public String getSize() {
