@@ -18,8 +18,6 @@ import java.util.Map;
 @Controller
 @EnableAutoConfiguration
 public class PizzaKioskApplication {
-
-
     @RequestMapping("/")
     public String home(Model model) {
         model.addAttribute("sizes", DataSource.instance().getSizeMap().keySet());
